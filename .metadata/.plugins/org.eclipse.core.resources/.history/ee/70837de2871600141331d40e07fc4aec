@@ -1,0 +1,20 @@
+package com.ygo.ygo_parking_project;
+
+
+public class Favorites 
+{
+	private String addrees;
+	
+	public Favorites(String parkingZone)
+	{
+		this.addrees=parkingZone;
+	}
+
+	public String getAddrees() {
+		return addrees;
+	}
+
+	public void setAddrees(String addrees) {
+		this.addrees = addrees;
+	}
+}

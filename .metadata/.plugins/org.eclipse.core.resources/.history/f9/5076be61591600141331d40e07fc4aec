@@ -1,0 +1,9 @@
+package com.ygo.ygo_parking_project;
+
+public class ParkingZone {
+
+	public ParkingZone() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

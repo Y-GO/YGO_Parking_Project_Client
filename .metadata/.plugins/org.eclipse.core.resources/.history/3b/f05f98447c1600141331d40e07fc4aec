@@ -1,0 +1,14 @@
+package com.ygo.ygo_parking_project;
+
+import java.util.Date;
+
+public class Favorites 
+{
+	private ParkingZone addrees;
+	
+	public Favorites(ParkingZone parking)
+	{
+		this.addrees=parking;
+	}
+
+}

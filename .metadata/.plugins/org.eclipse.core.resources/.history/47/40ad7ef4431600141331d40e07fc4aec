@@ -1,0 +1,98 @@
+package com.ygo.ygo_parking_project;
+
+import org.w3c.dom.Text;
+
+import android.support.v7.app.ActionBarActivity;
+import android.content.ComponentName;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.IntentSender;
+import android.content.ServiceConnection;
+import android.content.SharedPreferences;
+import android.content.IntentSender.SendIntentException;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.AssetManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.content.res.Resources.Theme;
+import android.database.DatabaseErrorHandler;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.UserHandle;
+import android.view.Display;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.PopupWindow;
+
+
+public class MainActivity extends ActionBarActivity 
+{
+	private boolean isInEditMode= true;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        final Button loginButton = (Button)findViewById(R.id.buttonLogIn); 
+        loginButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				EditText textUser = (EditText)findViewById(R.id.editUserName);
+				EditText textPassword = (EditText)findViewById(R.id.editPassword);
+				
+				
+				if (isInEditMode)
+				{
+					isInEditMode=false;
+					String usertext = textUser.getText().toString();
+					System.out.println(usertext);
+					PopupWindow(new Contextont)
+					textUser.setEnabled(false);
+					textPassword.setEnabled(false);
+					loginButton.setText("Edit");
+				}
+				else
+				{
+					isInEditMode=true;
+					textUser.setEnabled(true);
+					textPassword.setEnabled(true);
+					loginButton.setText("Login");
+				}
+			}
+		});
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}

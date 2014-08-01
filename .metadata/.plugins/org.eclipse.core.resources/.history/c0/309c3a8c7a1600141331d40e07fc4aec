@@ -1,0 +1,8 @@
+package com.ygo.ygo_parking_project;
+
+public class ParkingSpace {
+	private int idSlot;
+	private String coordinates;
+	private String slotType;
+	private boolean available;
+}

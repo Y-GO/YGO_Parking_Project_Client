@@ -1,0 +1,29 @@
+1406473919268	Extracts string 'Medium Text' into R.string.medium_text
+1406474084800	Extracts string 'Login' into R.string.login
+1406474164025	Extracts string 'Login' into R.string.login
+1406474347025	Extracts string 'User: ' into R.string.user_
+1406474368743	Extracts string 'Login' into R.string.login
+1406476553689	Rename field 'button1'
+1406540407360	Rename field 'editText1'
+1406540456587	Rename field 'editText2'
+1406540486941	Rename field 'button1'
+1406540648048	Extracts string 'User:' into R.string.user
+1406540681030	Extracts string 'Password:' into R.string.password
+1406540689962	Extracts string 'Login' into R.string.login
+1406540742189	Remove Container
+1406541089005	Remove Container
+1406541120970	Remove Container
+1406555053371	Rename field 'button1'
+1406570427136	Rename field 'button1'
+1406574581938	Extracts string 'null' into R.string.exit_app
+1406575193300	Extracts string 'null' into R.string.end_exit2
+1406728761652	Rename type 'MainActivity'
+1406728868335	Rename resource 'activity_main.xml'
+1406739009645	Extract method 'swichToFavorites'
+1406741105909	Extract method 'switchToAddFavorites'
+1406741786513	Extracts string 'Insert address:' into R.string.insert_address
+1406741793741	Extracts string 'Save' into R.string.save
+1406741801499	Extracts string 'Title:' into R.string.title
+1406743973209	Extracts string 'Search' into R.string.search
+1406743979535	Extracts string 'Favorites' into R.string.favorites
+1406744964586	Extracts string 'Address:' into R.string.address

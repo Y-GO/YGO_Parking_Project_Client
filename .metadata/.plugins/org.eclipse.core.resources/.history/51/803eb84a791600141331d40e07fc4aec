@@ -1,0 +1,59 @@
+package com.ygo.ygo_parking_project;
+
+
+public class ParkingZone 
+{
+	private int idZone;
+	private String address;
+	private int numberOfParkingSpace;
+	private int availableParkingSpace;
+	
+	public ParkingZone(int idZone, String address, int numberOfParkingSpace, int availableParkingSpace) 
+	{
+		this.idZone = idZone;
+		this.address = address;
+		this.numberOfParkingSpace = numberOfParkingSpace;
+		this.availableParkingSpace = availableParkingSpace;
+	}
+	
+	public int getIdZone() 
+	{
+		return idZone;
+	}
+
+	public void setIdZone(int idZone) 
+	{
+		this.idZone = idZone;
+	}
+
+	public String getAddress() 
+	{
+		return address;
+	}
+
+	public void setAddress(String address) 
+	{
+		this.address = address;
+	}
+
+	public int getNumberOfParkingSpace() 
+	{
+		return numberOfParkingSpace;
+	}
+
+	public void setNumberOfParkingSpace(int numberOfParkingSpace) 
+	{
+		this.numberOfParkingSpace = numberOfParkingSpace;
+	}
+
+	public int getAvailableParkingSpace() 
+	{
+		return availableParkingSpace;
+	}
+
+	public void setAvailableParkingSpace(int availableParkingSpace) 
+	{
+		this.availableParkingSpace = availableParkingSpace;
+	}
+
+}
